@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintFont"
+    tools:context=".FontStyling">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standartMargin"
+        android:layout_marginLeft="@dimen/standartMargin"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/standartMargin"
+        android:layout_marginRight="@dimen/standartMargin"
+        android:textSize="@dimen/textViewFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standartMargin"
+        android:layout_marginLeft="@dimen/standartMargin"
+        android:layout_marginTop="@dimen/standartMargin"
+        android:layout_marginEnd="@dimen/standartMargin"
+        android:layout_marginRight="@dimen/standartMargin"
+        android:layout_marginBottom="@dimen/standartMargin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="@dimen/radiogroupBias">
+
+        <RadioButton
+            android:id="@+id/normalRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standartMargin"
+            android:layout_marginLeft="@dimen/standartMargin"
+            android:layout_marginTop="@dimen/standartMargin"
+            android:layout_marginEnd="@dimen/standartMargin"
+            android:layout_marginRight="@dimen/standartMargin"
+            android:text="@string/normalRadio" />
+
+        <RadioButton
+            android:id="@+id/boldRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standartMargin"
+            android:layout_marginLeft="@dimen/standartMargin"
+            android:layout_marginTop="@dimen/standartMargin"
+            android:layout_marginEnd="@dimen/standartMargin"
+            android:layout_marginRight="@dimen/standartMargin"
+            android:layout_marginBottom="@dimen/standartMargin"
+            android:text="@string/boldRadio" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/italicCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standartMargin"
+        android:layout_marginLeft="@dimen/standartMargin"
+        android:layout_marginTop="@dimen/standartMargin"
+        android:layout_marginEnd="@dimen/standartMargin"
+        android:layout_marginRight="@dimen/standartMargin"
+        android:padding="@dimen/checkBoxPadding"
+        android:text="@string/italicCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/chooseColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standartMargin"
+        android:layout_marginLeft="@dimen/standartMargin"
+        android:layout_marginTop="@dimen/standartMargin"
+        android:layout_marginEnd="@dimen/standartMargin"
+        android:layout_marginRight="@dimen/standartMargin"
+        android:onClick="onColorPick"
+        android:text="@string/chooseColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="@dimen/buttonBias"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/italicCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listViewHeight"
+        android:layout_marginStart="@dimen/standartMargin"
+        android:layout_marginLeft="@dimen/standartMargin"
+        android:layout_marginTop="@dimen/standartMargin"
+        android:layout_marginEnd="@dimen/standartMargin"
+        android:layout_marginRight="@dimen/standartMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseColorButton" />
+
+    <Switch
+        android:id="@+id/switchLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standartMargin"
+        android:layout_marginLeft="@dimen/standartMargin"
+        android:layout_marginEnd="@dimen/standartMargin"
+        android:layout_marginRight="@dimen/standartMargin"
+        android:text="@string/switchGreedText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standartMargin"
+        android:layout_marginEnd="@dimen/standartMargin"
+        android:layout_marginRight="@dimen/standartMargin"
+        android:layout_marginBottom="@dimen/standartMargin"
+        android:text="@string/delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standartMargin">8dp</dimen>
+    <dimen name="standartMarginx4">32dp</dimen>
+    <dimen name="textViewFontSize">20sp</dimen>
+    <dimen name="checkBoxPadding">7dp</dimen>
+    <dimen name="listViewHeight">100dp</dimen>
+    <dimen name="stardartMarginX2">16dp</dimen>
+    <dimen name="standartMarginX3">24dp</dimen>
+    <integer name="ems">10</integer>
+    <dimen name="radiogroupBias">0.116</dimen>
+    <dimen name="buttonBias">0.498</dimen>
+    <dimen name="heightList">100dp</dimen>
+    <dimen name="toolbarWidth">395dp</dimen>
+    <dimen name="textListSize">18sp</dimen>
+    <dimen name="layoutMarginBottomItem">1dp</dimen>
+</resources>

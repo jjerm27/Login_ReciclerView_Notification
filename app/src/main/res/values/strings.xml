@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="loginHint">Login</string>
+    <string name="passwordHint">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="normalRadio">Normal</string>
+    <string name="boldRadio">Bold</string>
+    <string name="italicCheck">Italic</string>
+    <string name="chooseColor">Choose color</string>
+    <string name="channel_name">FontStylingChannel</string>
+    <string name="channel_description">FontStylingDescription</string>
+    <string name="alertTitle">Text!</string>
+    <string name="alertOk">Ok</string>
+    <string name="notificationInfo">Info!</string>
+    <string name="sampleText">Sample text</string>
+    <string name="loggedIn">Logged in</string>
+    <string name="youNotRegistered">You not registered or wrong login/password</string>
+    <string name="switchGreedText">Greed</string>
+    <string name="delete">Delete</string>
+</resources>
